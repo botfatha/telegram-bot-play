@@ -7,7 +7,6 @@ module.exports = async (req, res) => {
         const chatId = message.chat.id;
         const text = message.text;
 
-        // When a user sends the "/start" command
         if (text === '/start') {
             const inlineKeyboard = {
                 inline_keyboard: [
